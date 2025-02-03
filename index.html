@@ -8,13 +8,20 @@
     <!-- daisy ui + tailwind css  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <!-- fontawsome cdn  -->
+    <script src="https://kit.fontawesome.com/659dc3132f.js" crossorigin="anonymous"></script>
+    <!-- googles font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
                         sora: ["Sora", "serif"],
+                        adlam: ["ADLaM Display", "serif"]
                     },
                 }
             }
@@ -25,10 +32,54 @@
 <body class="font-sora">
     <!-- header section start here  -->
     <header>
+        <!-- hero container  -->
+        <section class="bg-[#FFF9F4]">
+            <nav class="max-w-[1152px] mx-auto lg:py-5 flex items-center justify-between lg:p-0 p-5">
+                <div class="flex items-center gap-4">
+                    <img src="./c1-assets/logo-header.png" alt="">
+                    <h1 class=" text-3xl font-bold hidden lg:block">Browse<span class="text-[#FFDC26]">4</span>Pets</h1>
+                </div>
+                <ul class="flex gap-5">
+                    <li class="list-none text-xl hidden lg:block"><a href="#">Find a pet</a></li>
+                    <li class="list-none text-xl hidden lg:block"><a href="#">Breeds</a></li>
+                    <li class="list-none text-xl hidden lg:block"><a href="#">Contact us</a></li>
+                </ul>
+                <div class="flex items-center gap-5">
+                    <i class="fa-solid fa-bell fa-xl hidden lg:block"></i>
+                    <i class="fa-solid fa-magnifying-glass fa-xl hidden lg:block"></i>
+                    <button class="btn px-8 border-2 border-[#FFDC26] hidden lg:block">Login</button>
+                    <button class="btn bg-[#FFDC26] px-8 hidden lg:block">Register</button>
+                </div>
+                <i class="fa-solid fa-bars fa-3x lg:hidden"></i>
+            </nav>
+            <hr class="border-none w-full h-1 bg-[#FFDC26] lg:hidden ">
+        </section>
+        <!-- hero banner section  -->
+        <section class="max-w-[1152px] mx-auto mt-[76px] h-[580px]">
+            <div class="flex relative items-center lg:p-0 p-5">
+                <div class="space-y-5 z-10">
+                    <h1 class="text-4xl font-bold font-adlam">Pamper Your Pet,<br> Because They Deserve <br> the Bes
+                    </h1>
+                    <p class="font-sora text-[#111111] max-w-[672px]">Discover a world of treats, toys, and essentials
+                        handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                    <button class="btn bg-[#FFDC26] px-8">Find a pet</button>
+                </div>
+                <div class="">
+                    <img class="absolute lg:-top-[80px] lg:left-0 bottom-0 top-[230px] left-0 z-0"
+                        src="./c1-assets/cat-big.png" alt="">
+                </div>
+            </div>
+        </section>
     </header>
     <!-- main section start here  -->
     <main>
-
+        <!-- Browse By Categories  -->
+        <section>
+            <!-- Browse content  -->
+            <div>
+                <h1>Browse By Categories</h1>
+            </div>
+        </section>
     </main>
     <!-- footer section start here  -->
     <footer>
